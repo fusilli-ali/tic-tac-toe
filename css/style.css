@@ -1,0 +1,57 @@
+body {
+	font-family: 'Oswald', sans-serif;
+	text-align:center;
+}
+h1 {
+	font-size: 5rem;
+}
+p {
+	font-size: 3rem;
+}
+div.main {
+	width: 30%;
+	height: auto;
+	margin: 0 auto;
+}
+div.one, 
+div.two,
+div.three,
+div.four, 
+div.five,
+div.six,
+div.seven,
+div.eight, 
+div.nine {
+	width:33%;
+	height:100px;
+}
+div.one {
+	border-right: solid 5px black;
+    border-bottom: solid 5px black;
+}
+div.two {
+	border-right: solid 5px black;
+    border-bottom: solid 5px black;
+}
+div.three {
+    border-bottom: solid 5px black;
+}
+div.four {
+	border-right: solid 5px black;
+	border-bottom: solid 5px black;	
+}
+div.five {
+	border-bottom: solid 5px black;
+	border-right: solid 5px black;
+}
+div.six {
+	border-bottom: solid 5px black;
+}
+div.seven {
+	border-right: solid 5px black;
+}
+div.eight {
+	border-right: solid 5px black;
+}
+div.nine {
+}
