@@ -1,6 +1,6 @@
 body {
 	font-family: 'Oswald', sans-serif;
-	text-align:center;
+	text-align: center;
 }
 h1 {
 	font-size: 5rem;
@@ -54,4 +54,9 @@ div.eight {
 	border-right: solid 5px black;
 }
 div.nine {
+}
+span.x,
+span.o {
+	color: red;
+	font-size: 50px;
 }
