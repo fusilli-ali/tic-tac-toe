@@ -15,15 +15,36 @@ $(document).ready( function() {
 	function RandomPlay() {
 		do {
 			computerPlay()
+				console.log(oplay)
 		}
 		while  (xplays.includes(oplay) || (oplays.includes(oplay)));
+		oplays.push(oplay);
 		var oplayString = oplay.toString();
 		$("[data-cell="+oplayString+"]").html('<span class="o">O</span>');
+		if (CheckWin(oplays)){
+			console.log("o wins")
+		}
 	}
+
+//is there a winner?
+	function CheckWin(plays) {
+		if (oplays.length + xplays.length == 9) {
+			console.log("DRAW!");
+			return true;
+		}
+			return false;
+	}
+
 
 	$('div.grid').click(function() {
 		$(this).html('<span class="x">X</span>');
 		xplays.push($(this).data('cell'));
-		RandomPlay();
+			console.log(xplays);
+		if (CheckWin(xplays)){
+			console.log("x wins")
+		}
+		else {
+			RandomPlay();
+		}
 	})
 });
